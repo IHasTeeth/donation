@@ -9,9 +9,9 @@ used tailwind and fauna db
 
 
 ## How to run
-Install Java (duh)
-clone project
-open terminal in folder
-`javac Server.c`
-`java Server`
+- Install Java (duh)
+- clone project
+- open terminal in folder
+- `javac Server.c`
+- `java Server`
 
