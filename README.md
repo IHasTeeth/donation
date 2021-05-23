@@ -14,4 +14,5 @@ used tailwind and fauna db
 - open terminal in folder
 - `javac Server.c`
 - `java Server`
+- open browser & go to localhost:6880/src/signup.html
 
