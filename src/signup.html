@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DonateCart-Landing Page</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    body {
+      font-family: "Roboto Slab", serif;
+    }
+  </style>
+  <body>
+    <div class="flex flex-col h-screen bg-gray-100 justify-center items-center">
+      <div class="container border-2 flex flex-col max-w-lg p-4 rounded-lg">
+        <div class="p-2 py-4 font-bold text-2xl">Sign up</div>
+        <form class="flex flex-col" action="">
+          <input
+            id="name"
+            class="p-2 m-1 rounded"
+            type="text"
+            placeholder="Name"
+          />
+          <input
+            id="email"
+            class="p-2 m-1 rounded"
+            type="text"
+            placeholder="Email"
+          />
+          <input
+            id="password"
+            class="p-2 m-1 rounded"
+            type="text"
+            placeholder="Password"
+          />
+          <input
+            type="button"
+            onclick="save()"
+            class="
+              p-2
+              my-4
+              m-1
+              bg-blue-900
+              hover:bg-blue-800
+              rounded
+              text-white
+            "
+            value="Sign up"
+          />
+          <a href="/src/login.html" class="link font-light text-sm"
+            >Login instead?</a
+          >
+        </form>
+      </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb.js"></script>
+    <script src="./func/signup.js"></script>
+  </body>
+</html>

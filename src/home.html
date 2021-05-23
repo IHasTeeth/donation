@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DonateCart-Login Page</title>
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap");
+    body {
+      font-family: "Roboto Slab", serif;
+      background-color: rgba(249, 250, 251);
+    }
+  </style>
+  <body>
+    <div class="flex flex-col h-screen">
+      <div
+        class="
+          topbar
+          flex
+          p-2
+          py-4
+          w-full
+          justify-between
+          self-start
+          bg-green-500
+          text-white
+          font-bold
+        "
+      >
+        <div class="title">Welcome to Donate cart</div>
+        <div class="title text-base">➕</div>
+      </div>
+      <div class="heading p-2 py-4 text-center">
+        Good to see here, Saloni
+        <div class="sub font-light text-sm">
+          Find the cause you'll be donating to
+        </div>
+      </div>
+
+      <div id="cardBox" class="p-2 flex flex-col items-center justify-center">
+        <script>
+          var data = [1, 24, 5, 6, 2];
+          var finalHTML = "";
+          for (let index = 0; index < data.length; index++) {
+            const element = data[index];
+            finalHTML += `<div class="m-2 max-w-sm bg-white w-full rounded-lg shadow-lg p-4">
+            <h3 class="font-semibold text-sm text-gray-700">Card</h3>
+            <p class="text-gray-500 text-xs my-1">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi
+              ipsum porro minus dolorem maiores sapiente dolore dolor rem quod
+              molestiae esse corrupti quos voluptatem, temporibus est facilis.
+              Neque, fugit nulla.
+            </p>
+            <div>
+              <button
+                class="
+                  uppercase
+                  font-semibold
+                  tracking-wide
+                  bg-blue-100
+                  text-blue-700
+                  px-2
+                  py-1
+                  rounded-lg
+                  mt-2
+                  focus:outline-none
+                  hover:bg-blue-200
+                "
+              >
+                Donate
+              </button>
+            </div>
+          </div>`;
+          }
+
+          document.getElementById("cardBox").innerHTML = finalHTML;
+        </script>
+      </div>
+    </div>
+    <script src="//cdn.jsdelivr.net/npm/faunadb@latest/dist/faunadb.js"></script>
+    <script src="./func/login.js"></script>
+  </body>
+</html>
